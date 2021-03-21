@@ -1,0 +1,94 @@
+/* box sizing */
+* {
+    /* Setting the box sizing as below includes any padding or margins when calculating the height of an element. */
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    /* text-align: center; */
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0 15px 0 15px
+}
+
+body {
+    background: #c2daf1;
+    margin: 0 0 0 0;
+    font-family: "IBM Plex Serif", serif;
+}
+
+hr {
+    /* This tells the browser to make the line 90% of the width of the viewport. */
+    max-width: 90%;
+    border: 0;
+    height: 2px;
+    background: #333;
+    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
+    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 60px;
+}
+
+.page-nav {
+    text-align: center;
+    /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
+    /* I used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
+    position: -webkit-sticky;
+    position: sticky;
+    /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
+    top: 0;
+    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
+    /* I got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #062845;
+}
+
+.page-nav li {
+    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
+    display: inline;
+}
+
+.page-nav li a {
+    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
+    display: inline-block;
+    color: #D6C3A0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.page-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #57647A;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+.app-store {
+    height: 60px;
+    width: auto;
+}
