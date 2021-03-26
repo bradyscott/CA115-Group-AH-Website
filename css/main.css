@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0%;
     text-align: center;
 }
@@ -41,6 +41,11 @@ h3 {
     font-weight: 500;
 }
 
+h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
 p {
     font-size: 1.2em;
     margin: 1%;
@@ -50,17 +55,13 @@ p {
     
 }
 
-section{
+section {
     align-items: center;
 }
 
-/* #about{
-
-} */
 
 body {
     margin: 0 0 0 0;
-    font-family: "IBM Plex Serif", serif;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -69,7 +70,6 @@ body {
     height: 300px;
     margin: 1%;
 }
-
 
 .page-nav {
     
@@ -94,7 +94,6 @@ body {
 }
 
 .page-nav li {
-    
     /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
     display: inline;
 }
@@ -183,7 +182,7 @@ body {
   
   /* Change the width of the three columns to 100%
   (to stack horizontally on small screens) */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .columns {
       width: 100%;
     }
