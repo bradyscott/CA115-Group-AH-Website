@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-    margin: 0%;
-    text-align: center;
-}
+
 
 header{
     color: white;
-    text-shadow: black 0px 0px 4px ;
+    text-shadow: black 0px 0px 3px ;
     margin: 0%;
     height:max-content;
     background-size: 2000px;
@@ -22,8 +19,12 @@ header{
 
 .header-content{
     height: 200px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+h1,h2,h3{
+    margin: 0%;
 }
 
 h1 {
@@ -32,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: 600;
 }
 
@@ -46,18 +47,21 @@ h4 {
     font-weight: 400;
 }
 
+section{
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+    background-color: rgba(180, 180, 180, 0.171);
+}
+
 p {
     font-size: 1.2em;
     margin: 1%;
     padding: 1%;
     line-height: 35px;
-    background-color: rgb(207, 232, 253);
-    
+    width:100%;
 }
 
-section {
-    align-items: center;
-}
 
 
 body {
