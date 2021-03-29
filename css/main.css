@@ -4,38 +4,53 @@
     box-sizing: border-box;
 }
 
-
-
-header{
+header {
     color: white;
     text-shadow: black 0px 0px 3px ;
     margin: 0%;
-    height:max-content;
+    height: max-content;
     background-size: 2000px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../img/header-background.jpg');
+    /* background-image: url('../img/header-background.jpg'); */
+    background-color: #c2daf1;
 }
 
-.header-content{
-    height: 200px;
+.header-content {
+    /* height: 200px;
     -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); */
 }
+
+.header-content img {
+  display: block;
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 h1,h2,h3{
-    margin: 0%;
+
 }
 
 h1 {
     font-size: 4em;
     font-weight: 700;
+    text-align: center;
 }
 
 h2 {
     font-size: 2em;
     font-weight: 600;
-}
+    text-align: center;
+  }
 
 h3 {
     font-size: 1.8em;
@@ -47,46 +62,64 @@ h4 {
     font-weight: 400;
 }
 
-section{
-    margin: 1%;
+section {
+    /* margin: 1%;
     padding: 1%;
-    align-items: center;
-    background-color: rgba(180, 180, 180, 0.171);
+    align-items: center; */
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article p {
+  display: inline-block;
+  width: 60%;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+}
+
+article img {
+  display: inline-block;
+  vertical-align: top;
+  height: 40ch;
+  width: 30%;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 p {
     font-size: 1.2em;
-    margin: 1%;
-    padding: 1%;
+    /* margin: 1%;
+    padding: 1%; */
     line-height: 35px;
-    width:100%;
+    padding: 0 15px 0 15px
 }
-
-
 
 body {
     margin: 0 0 0 0;
     font-family: "Montserrat", sans-serif;
+    background: #e6e6e6;
 }
 
-.content img{
+/* .content img{
     border: lightgray 5px solid;
     height: 300px;
     margin: 1%;
-}
+} */
 
 .page-nav {
-    
     text-align: center;
-    /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
-    /* I used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
+
     position: -webkit-sticky;
     position: sticky;
-    /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
     top: 0;
     height: max-content;
-    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
-    /* I got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
     background-color: #0286fa;
 }
 
@@ -97,15 +130,19 @@ body {
     padding: 0;
 }
 
+.page-nav ul img {
+  height: 40px;
+  width: auto;
+  display: inline;
+}
+
 .page-nav li {
-    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
     display: inline;
 }
 
 .page-nav li a {
     color: white;
     font-weight: bold;
-    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
