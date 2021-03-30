@@ -9,17 +9,15 @@ header {
     text-shadow: black 0px 0px 3px ;
     margin: 0%;
     height: max-content;
-    background-size: 2000px;
-    background-repeat: no-repeat;
     background-position: center;
-    /* background-image: url('../img/header-background.jpg'); */
+    background-size: cover;
+    background-image: url('../img/clouds.jpg');
     background-color: #c2daf1;
 }
 
 .header-content {
-    /* height: 200px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px); */
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
 
 .header-content img {
@@ -36,9 +34,7 @@ html {
 }
 
 
-h1,h2,h3{
 
-}
 
 h1 {
     font-size: 4em;
