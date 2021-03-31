@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>StudyPeak - Your Study Companion</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -27,10 +30,42 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <main>
+        <nav class="navbar navbar fixed-top navbar-light navbar-expand-lg shadow">
+            <a class="navbar-brand" href="">
+                <img src="/img/studypeak_logo.webp" width="auto" height="40"
+                  class="d-inline-block align-top mr-1" alt="StudyPeak logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#download">Download</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+
+              </ul>
+            </div>
+        </nav>
         <header>
             <div class="header-content">
                 <!-- <h1 style="margin: 1%; margin-top: 0%;">StudyPeak</h1><br>
@@ -40,7 +75,7 @@
                 <img src="img/studypeak_logo.webp" alt="StudyPeak Logo">
             </div>
         </header>
-        <nav class="page-nav">
+        <!-- <nav class="page-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
@@ -48,7 +83,28 @@
                 <li><a href="#download">Download</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
+
+        <!-- <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brand">Bootstrap 5</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> -->
+
         <section id="about">
             <!-- <div style="display: flex;" class="content"> -->
             <div class="content">
@@ -80,7 +136,7 @@
 
         <section id="features">
             <h1>Features galore.</h1>
-            <h2>Everything you'd expect from a study app. And then some.</h2>
+            <h2>Everything you'd expect from a study app. And more.</h2>
             <div class="content">
                 <div class="row">
                     <div class="column-large" style="float: right">
@@ -245,10 +301,15 @@
                         </div>
                     </form>
                 </div>
+
+                <h1>Our team.</h1>
+                <h2>The people behind StudyPeak.</h2>
+                <p>Names/images here</p>
             </div>
         </section>
 
         <footer>
+            <!-- Icon source: https://www.iconfinder.com/iconsets/social-media-circle-7 -->
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank"><img src="img/facebook-icon.svg"
                         alt="Visit us on Facebook"></a>
@@ -265,13 +326,15 @@
             </p>
             <p>CA115 • Group AH • Dr Niall McMahon</p>
         </footer>
-
-        <!-- <div class="social">
-            <a href="#" target="blank"><img src="img/instagram.png" alt="logo of Instagram"></a>
-            <a href="#" target="blank"><img src="img/twitter.png" alt="logo of Twitter"></a>
-            <a href="" target="blank"><img src="img/youtube.png" alt="logo of YouTube"></a>
-        </div> -->
     </main>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
