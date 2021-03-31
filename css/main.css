@@ -55,40 +55,30 @@ h4 {
     font-weight: 400;
 }
 
+p {
+  font-size: 1.2em;
+  /* margin: 1%;
+  padding: 1%; */
+  line-height: 35px;
+  /* padding: 0 15px 0 15px; */
+  text-align: center;
+}
+
 section {
-    /* margin: 1%;
-    padding: 1%;
-    align-items: center; */
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 60px;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* article p {
-  display: inline-block;
-  width: 60%;
-  @media (max-width: 620px) {
-    width: 100%;
-  }
+
+.row {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-
-article img {
-  display: inline-block;
-  vertical-align: top;
-  height: 40ch;
-  width: 30%;
-  @media (max-width: 620px) {
-    width: 100%;
-  }
-} */
-
-/* .row {
-    margin: 8px -16px;
-    text-align: left;
-} */
 
 .row:after {
   content: "";
@@ -97,27 +87,18 @@ article img {
 }
 
 .column-small {
-  float: right;
-  width: 33.3%;
+  /* float: right; */
+  width: 45%;
   text-align: center;
 }
 
 .column-large {
-  float: left;
-  width: 66.66%
+  /* float: left; */
+  width: 55%
 }
 
 .column-small img {
   height: 50vh;
-}
-
-p {
-    font-size: 1.2em;
-    /* margin: 1%;
-    padding: 1%; */
-    line-height: 35px;
-    padding: 0 15px 0 15px;
-    text-align: center;
 }
 
 #features p {
@@ -129,12 +110,6 @@ body {
     font-family: "Montserrat", sans-serif;
     background: #ffffff;
 }
-
-/* .content img{
-    border: lightgray 5px solid;
-    height: 300px;
-    margin: 1%;
-} */
 
 .page-nav {
     text-align: center;
@@ -185,11 +160,21 @@ body {
     height: 60px;
     width: auto;
 }
+
+#iphone-home {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+#android-home {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
   
 /* <---ADAPTED FROM W3SCHOOLS.COM---> */
 
   /* Create three columns of equal width */
-  .columns {
+  .column {
     float: left;
     width: 33.3%;
     padding: 30px;
@@ -231,7 +216,7 @@ body {
   }
   
   /* The "Sign Up" button */
-  .button {
+  /* .button {
     background-color: #0286fa;
     border: none;
     color: white;
@@ -240,7 +225,7 @@ body {
     text-decoration: none;
     font-size: 18px;
   }
-  
+   */
   /* Change the width of the three columns to 100%
   (to stack horizontally on small screens) */
   @media only screen and (max-width: 800px) {
