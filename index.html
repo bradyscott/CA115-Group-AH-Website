@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -36,9 +36,9 @@
 
 <body>
     <main>
-        <nav class="navbar navbar fixed-top navbar-light navbar-expand-lg shadow">
+        <nav class="navbar navbar fixed-top navbar-dark navbar-expand-lg shadow">
             <a class="navbar-brand" href="">
-                <img src="/img/studypeak_logo.webp" width="auto" height="40"
+                <img src="img/studypeak_logo.webp" width="auto" height="40"
                   class="d-inline-block align-top mr-1" alt="StudyPeak logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,40 +75,11 @@
                 <img src="img/studypeak_logo.webp" alt="StudyPeak Logo">
             </div>
         </header>
-        <!-- <nav class="page-nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav> -->
-
-        <!-- <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand">Bootstrap 5</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                    <ul class="navbar-nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div> -->
 
         <section id="about">
             <!-- <div style="display: flex;" class="content"> -->
             <div class="content">
-                <h1>About</h1>
+                <h1>About.</h1>
                 <h2>Designed to be different.</h2>
                 <p>
                     StudyPeak is not just your run-of-the-mill study app. Designed to help students of all ages make the
@@ -138,8 +109,8 @@
             <h1>Features galore.</h1>
             <h2>Everything you'd expect from a study app. And more.</h2>
             <div class="content">
-                <div class="row">
-                    <div class="column-large" style="float: right">
+                <div class="feature-row">
+                    <div class="column-large" style="float:right">
                         <h3>Customised timetables in an instant.</h3>
                         <p>Remember you were going to make a study timetable but just couldn't be bothered? We weren't
                             either. Then we created StudyPeak. Creating your timetable is as easy as 1, 2, 3!</p>
@@ -150,13 +121,13 @@
                         <p>3. Don't forget your hobbies! Tell StudyPeak whay your hobbies are so it can factor them into
                             the timetable too.</p>
                     </div>
-                    <div class="column-small" style="float: left">
+                    <div class="column-small" style="float:left">
                         <img src="img/iphone-1.svg" alt="">
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="column-large" style="float: left">
+                <hr>
+                <div class="feature-row">
+                    <div class="column-large" style="float:left">
                         <h3>Progress tracking made easy.</h3>
                         <p>Just did a test? Input your result to StudyPeak. If it's a good result, StudyPeak might
                             reward
@@ -165,13 +136,13 @@
                             good, StudyPeak will intelligently recalculate your timetable so you can spend a little more
                             time at that subject and get back on track!</p>
                     </div>
-                    <div class="column-small" style="float: right">
+                    <div class="column-small" style="float:right">
                         <img src="img/iphone-1.svg" alt="">
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="column-large" style="float: right">
+                <hr>
+                <div class="feature-row">
+                    <div class="column-large" style="float:right">
                         <h3>Feeling confident? Compete with your friends.</h3>
                         <p>Add your classmates and prepare to see who can study the hardest. Every time you study or
                             input a
@@ -180,12 +151,12 @@
                             work, the better your progress (and grades) will be!
                         </p>
                     </div>
-                    <div class="column-small" style="float: left">
+                    <div class="column-small" style="float:left">
                         <img src="img/iphone-1.svg" alt="">
                     </div>
                 </div>
-
-                <div class="row">
+                <hr>
+                <div class="feature-row">
                     <div class="column-large" style="float: left">
                         <h3>Stuck? Get unstuck with Tutorial Videos.</h3>
                         <p>Did your maths teacher's explanation of differential calculus leave you feeling even more
@@ -202,18 +173,18 @@
         </section>
 
         <section id="pricing">
-            <h1>How much is it?</h1>
-            <h2>Surpsingly affordable.</h2>
+            <h1>Surprisingly affordable.</h1>
+            <h2>A small investment for a big return.</h2>
             <div class="content">
                 <p>We believe that a great study tool should be accessible to as many students as possible, especially
                     during these challenging times.<br>That's why StudyPeak Essential gives you everything you need to
                     develop a
-                    great study routine, for free!</p>
+                    great study routine, for free!<br>If you want to make the most of your study, you can upgrade to StudyPeak Premium or StudyPeak Ultimate for a small monthly price!</p>
 
                 <div class="row">
-                    <div class="column">
+                    <div class="columns">
                         <ul class="price">
-                            <li class="header">StudyPeak Essential</li>
+                            <li class="header" style="background-color: #C3E3FF;">★<br>StudyPeak<br>Essential</li>
                             <li class="grey">Free!</li>
                             <li>Automatic timetable creation</li>
                             <li>Up to 6 subjects</li>
@@ -221,23 +192,23 @@
                             <li>Ad-free</li>
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="columns">
                         <ul class="price">
-                            <li class="header">StudyPeak Premium</li>
-                            <li class="grey">€4.99/mo</li>
+                            <li class="header" style="background-color: #58AEF9;">★ ★<br>StudyPeak<br>Premium</li>
+                            <li class="grey">€3.99/mo</li>
                             <li>Everything in StudyPeak Essential, plus:</li>
                             <li>Reminder push notifications</li>
                             <li>Timetable export support</li>
                             <li>Unlimited subjects</li>
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="columns">
                         <ul class="price">
-                            <li class="header">StudyPeak Ultimate</li>
-                            <li class="grey">€9.99/mo</li>
+                            <li class="header" style="background-color: #0286FA;">★ ★ ★<br>StudyPeak<br>Ultimate</li>
+                            <li class="grey">€7.99/mo</li>
                             <li>Everything in StudyPeak Premium, plus:</li>
                             <li>Timetable sync across all your devices</li>
-                            <li>15GB cloud storage for all you school documents and projects</li>
+                            <li>15GB cloud storage for all your school documents and projects</li>
                             <li>Exclusive tutorial videos for 20+ Junior & Leaving Cert subjects</li>
                         </ul>
                     </div>
