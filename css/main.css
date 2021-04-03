@@ -256,6 +256,9 @@ p {
     .columns {
       width: 100%;
     }
+    #ourteam{
+      flex-direction: column;
+    }
   }
 
 footer {
@@ -280,3 +283,19 @@ footer p {
   padding: 15px;
 }
 
+#ourteam{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#ourteam h3{
+  font-weight: bold;
+}
+
+#ourteam img{
+  margin: 5%;
+  border-radius: 50%;
+  height: 250px;
+  box-shadow: 0px 0px 5px black;
+}
