@@ -231,6 +231,7 @@ p {
       width: 100%;
     }
     #ourteam{
+      text-align: center;
       flex-direction: column;
     }
   }
@@ -264,7 +265,7 @@ footer p {
 }
 
 #ourteam p {
-  text-align: left;
+  text-align: center;
   padding-left: 40px;
   padding-right: 40px;
 }
