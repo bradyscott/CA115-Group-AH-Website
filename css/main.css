@@ -12,6 +12,13 @@ body {
   background: #ffffff;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
 section {
   padding-top: 60px;
   padding-left: 20px;
