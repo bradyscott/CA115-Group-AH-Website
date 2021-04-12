@@ -136,8 +136,6 @@ p {
   float: left
 }
 
-
-
 #download .column img {
   width: 50%;
 }
@@ -159,7 +157,6 @@ p {
 }
 
 /* <---ADAPTED FROM W3SCHOOLS.COM---> */
-
 .columns {
   float: left;
   width: 33.3%;
@@ -210,6 +207,7 @@ footer p {
   text-align: center;
 }
 
+
 .footer-icons img {
   display: inline-block;
   width: 100px;
@@ -219,16 +217,22 @@ footer p {
   padding: 15px;
 }
 
-#ourteam {
+.team-column-lg {
+  width: 50%;
+  float: left;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
+  padding: 20px;
 }
 
-#ourteam p {
-  font-size: 16px;
+.team-column-sm {
+  width: 33.33%;
+  float: left;
   text-align: center;
-  margin: 5%
+  padding: 20px;
+}
+
+.team-column-lg p, .team-column-sm p {
+  padding: 20px;
 }
 
 #ourteam img {
@@ -239,8 +243,6 @@ footer p {
 }
 
 #ourteam h4 {
-  font-weight: 500;
-  font-size: 20px;
   padding-bottom: 10px;
 }
 
@@ -317,11 +319,21 @@ footer p {
     background-color: #121212;
     color: white;
   }
-}
-
-@media (prefers-color-scheme: dark) {
   .price .grey {
+    background-color: #4C4C4C;
+  }
+  .price {
     background-color: #272727;
+  }
+  #contact input[type="text"], input[type="email"], input[type="tel"] {
+    border: 2px solid #4C4C4C;
+    background-color: #4C4C4C;
+    color: white;
+  }
+  #contact textarea {
+    border: 2px solid #4C4C4C;
+    background-color: #4C4C4C;
+    color: white;
   }
 }
 
@@ -329,9 +341,8 @@ footer p {
   .columns {
     width: 100%;
   }
-  #ourteam {
-    text-align: center;
-    flex-direction: column;
+  .team-column-lg, .team-column-sm {
+    width: 100%;
   }
 }
 
